@@ -20,7 +20,7 @@ export const setLogger = (newLogger: any): void => {
     logger = newLogger;
 }
 
-const performanceLog = (methodCallBeforeLog: number): performanceLogType => {
+const performanceLog = (methodCallBeforeLog?: number | null): performanceLogType => {
     return (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) => {
         if (methodCallBeforeLog) {
             if (typeof methodCallBeforeLog !== "number") {
