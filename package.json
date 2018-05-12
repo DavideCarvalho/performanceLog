@@ -1,6 +1,6 @@
 {
   "name": "performance_annotation",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "main": "lib/annotation.js",
   "types": "lib/annotation.d.ts",
   "license": "MIT",
