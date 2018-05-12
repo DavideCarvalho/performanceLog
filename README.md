@@ -1,7 +1,7 @@
 # performance_annotation
 > Annotation to log the performance time of a method
 
-###### Since Node TIMING API had a breaking change from version 9 to 10, this api only works with Node 9. I'll work into make this package able to use on version 9 and 10.
+###### Since Node TIMING API had a breaking change on version 10, this api only works with Node <10. I'll work into make this package able to use on version 10.
 
 This package uses NodeJS `TIMING API`, so it's very accurate!
 
