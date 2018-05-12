@@ -8,6 +8,6 @@ declare module 'performance_annotation' {
           calls: number
       }
   };
-  export function performanceLog (methodCallBeforeLog: number): performanceLogType;
+  export default function performanceLog (methodCallBeforeLog: number): performanceLogType;
   export function setLogger (newLogger: any): void;
 }
