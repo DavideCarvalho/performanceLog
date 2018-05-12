@@ -1,4 +1,4 @@
-declare module 'annotation' {
+declare module 'performance_annotation' {
   interface performanceLogType {
     (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>): TypedPropertyDescriptor<any>
   }
