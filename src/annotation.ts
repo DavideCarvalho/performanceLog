@@ -9,6 +9,10 @@ type methodsType = {
     }
 };
 
+interface performanceLogType {
+  (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>): TypedPropertyDescriptor<any>
+}
+
 let logger: any = console.log;
 const methods: methodsType = {};
 
@@ -16,7 +20,7 @@ export const setLogger = (newLogger: any): void => {
     logger = newLogger;
 }
 
-const performanceLog = (methodCallBeforeLog: number) => {
+const performanceLog = (methodCallBeforeLog: number): performanceLogType => {
     return (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) => {
         if (methodCallBeforeLog) {
             if (typeof methodCallBeforeLog !== "number") {
