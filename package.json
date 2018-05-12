@@ -1,12 +1,24 @@
 {
   "name": "performance_annotation",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "main": "lib/annotation.js",
   "types": "lib/annotation.d.ts",
   "license": "MIT",
   "scripts": {
     "test": "jest",
     "build": "tsc"
+  },
+  "author": {
+    "name": "Davi de Carvalho",
+    "email": "davi_carvalho96@hotmail.com",
+    "url": "https://github.com/DavideCarvalho"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavideCarvalho/performanceLog"
+  },
+  "bugs": {
+    "url": "https://github.com/DavideCarvalho/performanceLog/issues"
   },
   "devDependencies": {
     "@types/bunyan": "^1.8.4",
