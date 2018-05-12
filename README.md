@@ -43,6 +43,8 @@ If you put `@performanceLog(2)`, the method will execute 2 times, and only on th
 
   new MyClass().myMethod()// won't log
   new MyClass().myMethod()// will log
+  new MyClass().myMethod()// won't log
+  new MyClass().myMethod()// will log
 ```
 
 ## setLogger(newLogger: any) => void
