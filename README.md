@@ -54,6 +54,6 @@ By default, it uses `console.log` as default logger, but you can change that wit
 import { setLogger } from 'performance_annotation';
 import bunyan from 'bunyan'
 const log = bunyan.createLogger({ name: "my logger" });
-setLogger(log);
+setLogger(log.info);
 ```
 Now the package will use your bunyan logger to log the measures!
