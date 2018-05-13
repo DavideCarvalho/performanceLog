@@ -74,4 +74,15 @@ describe('annotation', () => {
 
         expect(() => performanceLogInstantiated(new Teste().render())).toThrow();
     });
+    it('should work with async methods', async () => {
+        class Teste {
+            @performanceLog()
+            async render() {
+                console.log('inside render method');
+                return Promise.resolve("Worked!");
+            }
+        }
+        const todos = await new Teste().render();
+        expect(todos).toEqual("Worked!");
+    });
 });

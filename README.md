@@ -47,6 +47,22 @@ If you put `@performanceLog(2)`, the method will execute 2 times, and only on th
   new MyClass().myMethod()// will log
 ```
 
+It works with async methods too!
+
+```typescript
+  class MyClass {
+
+    @performanceLog()
+    async myMethod() {
+      // method logic inside
+      return Promise.resolve("Okay!");
+    }
+  }
+
+  const callingMyAsyncMethod = await new MyClass().myMethod()
+  // Okay!
+```
+
 ## setLogger(newLogger: any) => void
 
 By default, it uses `console.log` as default logger, but you can change that with `setLogger`, e.g:
